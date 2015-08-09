@@ -5,20 +5,22 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 // endbower
 $base-font-size: 16px;
 $base-line-height: 24px;
-$round-to-nearest-half-line: true;
+
 /* Space out content a bit */
 body {
+  font-size: $base-font-size !important;
+  line-height: $base-line-height !important;
   background-color: #333333;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
 }
 
 /* side spacing for mobile first views */
 header,
 main,
 footer {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 /* Custom page header */
