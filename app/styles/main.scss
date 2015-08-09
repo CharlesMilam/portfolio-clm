@@ -3,13 +3,15 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
-$base-font-size: 16px;
-$base-line-height: 24px;
+@import "_variables.scss";
+$font-size-base: 16px;
+$line-height-base: 1.5;
+$line-height-computed: floor(($font-size-base * $line-height-base));
 
 /* Space out content a bit */
 body {
-  font-size: $base-font-size !important;
-  line-height: $base-line-height !important;
+  font-size: $font-size-base;
+  line-height: $line-height-computed;
   background-color: #333333;
   padding-top: 1.2em;
   padding-bottom: 1.2em;
@@ -41,6 +43,9 @@ footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
+}
+.btn {
+  line-height: $line-height-base;
 }
 .container {
   width: 100%;
