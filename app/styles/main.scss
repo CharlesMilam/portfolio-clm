@@ -5,7 +5,11 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
+// fonts
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,200|Alegreya+Sans:400,700);
+// end fonts
 
+$title-color: #CDDC39;
 
 /* Space out content a bit */
 body {
@@ -46,15 +50,21 @@ footer {
 .container {
   width: 100%;
 }
+.container-narrow > hr {
+  margin: 30px 0;
+}
+.title-text {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 200;
+  color: $title-color;
+}
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
 }
-.container-narrow > hr {
-  margin: 30px 0;
-}
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
