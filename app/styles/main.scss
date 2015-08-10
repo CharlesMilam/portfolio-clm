@@ -1,18 +1,17 @@
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
-
+// custom variables to override bootstrap defaults
+@import "_custom-variables.scss";
+// end custom variables
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
-@import "_variables.scss";
-$font-size-base: 16px;
-$line-height-base: 1.5;
-$line-height-computed: floor(($font-size-base * $line-height-base));
+
 
 /* Space out content a bit */
 body {
   font-size: $font-size-base;
   line-height: $line-height-computed;
-  background-color: #333333;
+  background-color: $body-bg;
   padding-top: 1.2em;
   padding-bottom: 1.2em;
 }
@@ -43,9 +42,6 @@ footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
-}
-.btn {
-  line-height: $line-height-base;
 }
 .container {
   width: 100%;
