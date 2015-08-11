@@ -34,6 +34,7 @@ $navbar-default-toggle-border-color: #727272;
   background-color: $navbar-default-bg;
   font-family: 'Alegreya Sans SC', sans-serif;
   li {
+    padding-top: 0.75em;
     a {
       color: $link-color;
       &:hover {
@@ -120,9 +121,14 @@ footer {
   padding: 0.2em 0;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
   header {
     margin-bottom: 3em;
+  }
+  .nav {
+    li {
+      padding-top: 0;
+    }
   }
   .navbar-default .navbar-brand {
     font-size: 1.5em;
