@@ -6,7 +6,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 // fonts
-@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,200|Alegreya+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,100|Alegreya+Sans:400,700);
 // end fonts
 
 $title-color: #CDDC39;
@@ -23,6 +23,7 @@ $line-height-computed: floor(($font-size-base * $line-height-base));
 $component-active-color: #fff;
 $component-active-bg: darken($body-bg, 6.5%);
 $navbar-default-color: #F5F5F5;
+$navbar-default-brand-color: $link-color;
 $navbar-default-bg: $gray-dark;
 $navbar-default-border: transparent;
 $navbar-default-link-color: #CDDC39;
@@ -31,6 +32,7 @@ $navbar-default-toggle-icon-bar-bg: #727272;
 $navbar-default-toggle-border-color: #727272;
 .nav {
   background-color: $navbar-default-bg;
+  font-family: 'Alegreya Sans SC', sans-serif;
   li {
     a {
       color: $link-color;
@@ -73,8 +75,7 @@ footer {
 /* Custom page header */
 header {
   background-color: $navbar-default-bg;
-  border-bottom: 1px solid #e5e5e5;
-
+  border-color: transparent;
   /* Make the masthead heading the same height as the navigation */
   h3 {
     margin-top: 0;
@@ -87,8 +88,9 @@ header {
 /* Custom page footer */
 footer {
   padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+  background-color: $gray-dark;
+  color: $gray-light;
+  border-color: transparent;
 }
 .container {
   width: 100%;
@@ -96,12 +98,15 @@ footer {
 .container-narrow > hr {
   margin: 30px 0;
 }
+.navbar {
+  background-color: #333;
+  border-color: transparent;
+}
 .navbar-brand {
   font-family: 'Alegreya Sans SC', sans-serif;
-  font-weight: 200;
-  a {
-    color: $link-color;
-  }
+  font-size: 2.5em;
+  font-weight: 100;
+  color: $navbar-default-brand-color !important;
 }
 .title-text {
   font-family: 'Alegreya Sans SC', sans-serif;
