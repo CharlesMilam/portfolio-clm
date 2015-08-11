@@ -1,6 +1,6 @@
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 // custom variables to override bootstrap defaults
-@import "_custom-variables.scss";
+//@import "_custom-variables.scss";
 // end custom variables
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -30,8 +30,10 @@ $navbar-default-toggle-hover-bg: #ddd;
 $navbar-default-toggle-icon-bar-bg: #727272;
 $navbar-default-toggle-border-color: #727272;
 .nav {
+  background-color: $navbar-default-bg;
   li {
     a {
+      color: $link-color;
       &:hover {
         color: darken($navbar-default-link-color, 10%);
         background-color: darken($body-bg, 6.5%);
@@ -70,6 +72,7 @@ footer {
 
 /* Custom page header */
 header {
+  background-color: $navbar-default-bg;
   border-bottom: 1px solid #e5e5e5;
 
   /* Make the masthead heading the same height as the navigation */
@@ -96,6 +99,9 @@ footer {
 .navbar-brand {
   font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: 200;
+  a {
+    color: $link-color;
+  }
 }
 .title-text {
   font-family: 'Alegreya Sans SC', sans-serif;
