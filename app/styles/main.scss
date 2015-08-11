@@ -12,7 +12,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 $title-color: #CDDC39;
 // bootstrap overrides
 $body-bg: $gray-dark;
-$brand-primary: #F5F5F5;
+$brand-primary: #CDDC39;
 $text-color: #727272;
 $link-color: #CDDC39;
 $font-family-sans-serif: 'Alegreya Sans', sans-serif;
@@ -23,7 +23,7 @@ $line-height-computed: floor(($font-size-base * $line-height-base));
 $component-active-color: #fff;
 $component-active-bg: darken($body-bg, 6.5%);
 $navbar-default-color: #F5F5F5;
-$navbar-default-brand-color: $link-color;
+$navbar-default-brand-color: $brand-primary;
 $navbar-default-bg: $gray-dark;
 $navbar-default-border: transparent;
 $navbar-default-link-color: #CDDC39;
@@ -51,9 +51,6 @@ $navbar-default-toggle-border-color: #727272;
     }
   }
 }
-// .nav > li > a:hover {
-//
-// }
 // end bootstrap overrides
 /* Space out content a bit */
 body {
@@ -102,11 +99,14 @@ footer {
   background-color: #333;
   border-color: transparent;
 }
-.navbar-brand {
+.navbar-default .navbar-brand {
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 2.5em;
   font-weight: 100;
-  color: $navbar-default-brand-color !important;
+  color: $navbar-default-brand-color;
+  &:hover {
+    color: darken($navbar-default-brand-color, 10%);
+  }
 }
 .title-text {
   font-family: 'Alegreya Sans SC', sans-serif;
