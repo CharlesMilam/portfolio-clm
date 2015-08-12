@@ -20,53 +20,108 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
-    
+
   </head>
   <body>
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-    
     <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">portfolio clm</h3>
-      </div>
+      <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed navbar-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                 <span class="sr-only">Toggle navigation</span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+               </button>
+               <a href="#" class="navbar-brand">
+                 Charles Milam
+               </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav nav-pills navbar-right">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
 
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
-      </div>
+      <main>
+        <div class="container-fluid">
+          <div class="about-container">
+            <div class="row">
+              <div class="col-sm-3 about-image">
 
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4><a href="https://html5boilerplate.com/">HTML5 Boilerplate</a></h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+              </div>
+              <div class="col-sm-9 about-text">
+                <h2>About...</h2>
+                <p>
+                  I am a recent graduate of MakerSquare, and currently doing contract web development/admin work for a variety of small businesses. Most recently I was a paramedic, spent 7 years as a stay at home dad raising my two girls, and prior to that, worked for 10+ years at Applied Materials. At Applied I created a multitude of custom MS Access database applications, making extensive use of Visual Basic for Applications, in support of the materials and logistics groups of several divisions. I am looking to leverage my broad experience set into a junior web development role.
 
-          <h4><a href="http://libsass.org/">Sass</a></h4>
-          <p>Sass is a mature, stable, and powerful professional grade CSS extension language.</p>
-          
-
-          <h4><a href="http://getbootstrap.com/">Bootstrap</a></h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-          <h4><a href="http://modernizr.com/">Modernizr</a></h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-          
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+        <div class="container-fluid portfolio-container">
+          <div class="row">
+            <div class="col-md-4 proj-image">
 
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
-    </div>
-    
+            </div>
+            <div class="col-md-8 proj-text">
+              <h3 class="proj-title">Project 1</h3>
+              <p>
+                VHS tilde artisan taxidermy quinoa deep v hashtag, meh art party slow-carb irony four dollar toast ugh flexitarian. Quinoa lumbersexual distillery McSweeney's roof party paleo, artisan selvage chillwave. High Life American Apparel Carles blog plaid, deep v cliche master cleanse Pinterest Pitchfork distillery Schlitz selvage typewriter. Migas PBR Pinterest, whatever typewriter wayfarers fingerstache cornhole Etsy aesthetic Wes Anderson dreamcatcher you probably haven't heard of them readymade gentrify. Forage Carles mixtape, typewriter butcher Portland pop-up. Wayfarers roof party lumbersexual 8-bit master cleanse cornhole, kale chips ethical chillwave normcore messenger bag. Pug dreamcatcher YOLO single-origin coffee, Schlitz messenger bag seitan kale chips.
+
+                  Pork belly mixtape DIY, messenger bag put a bird on it before they sold out church-key 90's chambray fingerstache XOXO meditation food truck tote bag. Chambray fingerstache irony American Apparel, keytar mustache wayfarers you probably haven't heard of them bitters flexitarian Williamsburg. Sustainable keytar +1 kogi, dreamcatcher Echo Park typewriter drinking vinegar Austin PBR. Pitchfork Wes Anderson authentic, art party four dollar toast flexitarian DIY Carles XOXO organic fanny pack. Whatever cred jean shorts gluten-free, +1 health goth skateboard chillwave pour-over kitsch 90's Tumblr seitan fap selfies. Twee locavore biodiesel Bushwick mlkshk bicycle rights pour-over. Health goth fap kale chips street art hashtag keffiyeh blog craft beer, Echo Park plaid deep v taxidermy yr.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 proj-image">
+
+            </div>
+            <div class="col-md-8 proj-text">
+              <h3 class="proj-title">Project 2</h3>
+              <p>
+                VHS tilde artisan taxidermy quinoa deep v hashtag, meh art party slow-carb irony four dollar toast ugh flexitarian. Quinoa lumbersexual distillery McSweeney's roof party paleo, artisan selvage chillwave. High Life American Apparel Carles blog plaid, deep v cliche master cleanse Pinterest Pitchfork distillery Schlitz selvage typewriter. Migas PBR Pinterest, whatever typewriter wayfarers fingerstache cornhole Etsy aesthetic Wes Anderson dreamcatcher you probably haven't heard of them readymade gentrify. Forage Carles mixtape, typewriter butcher Portland pop-up. Wayfarers roof party lumbersexual 8-bit master cleanse cornhole, kale chips ethical chillwave normcore messenger bag. Pug dreamcatcher YOLO single-origin coffee, Schlitz messenger bag seitan kale chips.
+
+                  Pork belly mixtape DIY, messenger bag put a bird on it before they sold out church-key 90's chambray fingerstache XOXO meditation food truck tote bag. Chambray fingerstache irony American Apparel, keytar mustache wayfarers you probably haven't heard of them bitters flexitarian Williamsburg. Sustainable keytar +1 kogi, dreamcatcher Echo Park typewriter drinking vinegar Austin PBR. Pitchfork Wes Anderson authentic, art party four dollar toast flexitarian DIY Carles XOXO organic fanny pack. Whatever cred jean shorts gluten-free, +1 health goth skateboard chillwave pour-over kitsch 90's Tumblr seitan fap selfies. Twee locavore biodiesel Bushwick mlkshk bicycle rights pour-over. Health goth fap kale chips street art hashtag keffiyeh blog craft beer, Echo Park plaid deep v taxidermy yr.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 proj-image">
+
+            </div>
+            <div class="col-md-8 proj-text">
+              <h3 class="proj-title">Project 3</h3>
+              <p>
+                VHS tilde artisan taxidermy quinoa deep v hashtag, meh art party slow-carb irony four dollar toast ugh flexitarian. Quinoa lumbersexual distillery McSweeney's roof party paleo, artisan selvage chillwave. High Life American Apparel Carles blog plaid, deep v cliche master cleanse Pinterest Pitchfork distillery Schlitz selvage typewriter. Migas PBR Pinterest, whatever typewriter wayfarers fingerstache cornhole Etsy aesthetic Wes Anderson dreamcatcher you probably haven't heard of them readymade gentrify. Forage Carles mixtape, typewriter butcher Portland pop-up. Wayfarers roof party lumbersexual 8-bit master cleanse cornhole, kale chips ethical chillwave normcore messenger bag. Pug dreamcatcher YOLO single-origin coffee, Schlitz messenger bag seitan kale chips.
+
+                  Pork belly mixtape DIY, messenger bag put a bird on it before they sold out church-key 90's chambray fingerstache XOXO meditation food truck tote bag. Chambray fingerstache irony American Apparel, keytar mustache wayfarers you probably haven't heard of them bitters flexitarian Williamsburg. Sustainable keytar +1 kogi, dreamcatcher Echo Park typewriter drinking vinegar Austin PBR. Pitchfork Wes Anderson authentic, art party four dollar toast flexitarian DIY Carles XOXO organic fanny pack. Whatever cred jean shorts gluten-free, +1 health goth skateboard chillwave pour-over kitsch 90's Tumblr seitan fap selfies. Twee locavore biodiesel Bushwick mlkshk bicycle rights pour-over. Health goth fap kale chips street art hashtag keffiyeh blog craft beer, Echo Park plaid deep v taxidermy yr.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="conainer-fluid">
+          <div class="social-container">
+
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>&copy;2015 charles milam</p>
+
+      </footer>
+
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -75,7 +130,7 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-    
+
     <!-- build:js(.) scripts/plugins.js -->
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
@@ -90,7 +145,7 @@
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
     <!-- endbuild -->
-    
+
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>

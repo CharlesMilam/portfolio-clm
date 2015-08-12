@@ -1,35 +1,80 @@
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
-
+// custom variables to override bootstrap defaults
+//@import "_custom-variables.scss";
+// end custom variables
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
+// fonts
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,200,100|Alegreya+Sans:400,700);
+// end fonts
 
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+$title-color: #CDDC39;
+// bootstrap overrides
+$body-bg: $gray-dark;
+$brand-primary: #CDDC39;
+$text-color: #9E9E9E;
+$link-color: #CDDC39;
+$font-family-sans-serif: 'Alegreya Sans', sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.5; // 24/16
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed: floor(($font-size-base * $line-height-base));
+$component-active-color: #fff;
+$component-active-bg: darken($body-bg, 6.5%);
+$navbar-default-color: #F5F5F5;
+$navbar-default-brand-color: $brand-primary;
+$navbar-default-bg: $gray-dark;
+$navbar-default-border: transparent;
+$navbar-default-link-color: #CDDC39;
+$navbar-default-toggle-hover-bg: #ddd;
+$navbar-default-toggle-icon-bar-bg: #727272;
+$navbar-default-toggle-border-color: #727272;
+.nav {
+  background-color: $navbar-default-bg;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  li {
+    padding-top: 0.75em;
+    a {
+      color: $link-color;
+      &:hover {
+        color: darken($navbar-default-link-color, 10%);
+        background-color: darken($body-bg, 6.5%);
+      }
+      &:focus {
+        color: darken($navbar-default-link-color, 10%);
+        background-color: darken($body-bg, 6.5%);
+      }
+      &:active {
+        color: darken($navbar-default-link-color, 10%);
+        background-color: darken($body-bg, 6.5%);
+      }
+    }
+  }
 }
-
+// end bootstrap overrides
 /* Space out content a bit */
 body {
-  background-color: #333333;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  font-size: $font-size-base;
+  line-height: $line-height-computed;
+  background-color: $body-bg;
+  color: $text-color;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+/* side spacing for mobile first views */
+header,
+main,
+footer {
+  // padding-left: 1em;
+  // padding-right: 1em;
 }
 
 /* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-
+header {
+  background-color: $navbar-default-bg;
+  border-color: transparent;
   /* Make the masthead heading the same height as the navigation */
   h3 {
     margin-top: 0;
@@ -40,55 +85,120 @@ body {
 }
 
 /* Custom page footer */
-.footer {
+footer {
   padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+  background-color: $gray-dark;
+  color: $gray-light;
+  border-color: transparent;
 }
-
+.container {
+  padding: 0;
+  width: 100%;
+}
 .container-narrow > hr {
   margin: 30px 0;
 }
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
+.navbar {
+  background-color: #333;
+  border-color: transparent;
+}
+.navbar.navbar-default.navbar-fixed-top {
+  height: 3em;
+  margin-bottom: 0;
+}
+.navbar-default .navbar-brand {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 2.5em;
+  font-weight: 200;
+  color: $navbar-default-brand-color;
+  &:hover {
+    color: darken($navbar-default-brand-color, 10%);
   }
 }
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
-  }
+.about-container {
+  padding-top: 3em;
+}
+.proj-title {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 200;
+  color: $title-color;
+}
+.portfolio-container {
+  background-color: darken($body-bg, 7.5%);
+  padding: 0;
+  width: 100%
+}
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+@media (min-width: $screen-xs) {
   .container {
-    max-width: 730px;
+    padding: 0;
+    width: 100%;
+  }
+  .main {
+    padding: 0;
+    width: 100%;
+  }
+  header {
+    margin-bottom: 3em;
+  }
+  .nav {
+    li {
+      padding-top: 0;
+    }
+  }
+  .navbar-default .navbar-brand {
+    font-size: 1.5em;
+  }
+  .navbar-collapse {
+    margin-bottom: 3em;
+  }
+}
+// @media screen and (max-width: 320px) {
+//   header {
+//     margin-bottom: 3em;
+//   }
+//   .nav {
+//     li {
+//       padding-top: 0;
+//     }
+//   }
+//   .navbar-default .navbar-brand {
+//     font-size: 1.5em;
+//   }
+//   .navbar-collapse {
+//     margin-bottom: 3em;
+//   }
+// }
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: $screen-sm) {
+  .container {
+    padding: 0;
+    width: 100%;
   }
 
   /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
+  header,
+  main,
+  footer {
     padding-left: 0;
     padding-right: 0;
   }
 
   /* Space out the masthead */
-  .header {
+  header {
     margin-bottom: 30px;
   }
 
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
+}
+@media (min-width: $screen-md) {
+  .container {
+    padding: 0;
+    width: 100%;
   }
 }
