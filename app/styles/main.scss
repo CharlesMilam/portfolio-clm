@@ -102,6 +102,10 @@ footer {
   background-color: #333;
   border-color: transparent;
 }
+.navbar.navbar-default.navbar-fixed-top {
+  height: 3em;
+  margin-bottom: 0;
+}
 .navbar-default .navbar-brand {
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 2.5em;
@@ -110,6 +114,9 @@ footer {
   &:hover {
     color: darken($navbar-default-brand-color, 10%);
   }
+}
+.about-container {
+  padding-top: 3em;
 }
 .proj-title {
   font-family: 'Alegreya Sans SC', sans-serif;
