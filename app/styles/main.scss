@@ -120,6 +120,9 @@ footer {
   padding-top: 3em;
 }
 .about-text {
+  img {
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.3);
+  }
   .img-rounded {
     border-radius: 50%;
   }
