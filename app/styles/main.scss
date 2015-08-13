@@ -34,8 +34,9 @@ $navbar-default-toggle-border-color: #727272;
   background-color: $navbar-default-bg;
   font-family: 'Alegreya Sans SC', sans-serif;
   li {
-    padding-top: 0.75em;
+
     a {
+      padding-top: 1.5em;
       color: $link-color;
       &:hover {
         color: darken($navbar-default-link-color, 10%);
@@ -118,6 +119,14 @@ footer {
 .about-container {
   padding-top: 3em;
 }
+.about-text {
+  .img-rounded {
+    border-radius: 50%;
+  }
+  h2 {
+    margin-left: 1em;
+  }
+}
 .proj-title {
   font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: 200;
@@ -135,7 +144,7 @@ footer {
   padding: 0.2em 0;
 }
 
-@media (min-width: $screen-xs) {
+@media screen and (min-width: $screen-xs) {
   .container {
     padding: 0;
     width: 100%;
@@ -153,28 +162,13 @@ footer {
     }
   }
   .navbar-default .navbar-brand {
-    font-size: 1.5em;
+    // font-size: 1.5em;
   }
   .navbar-collapse {
     margin-bottom: 3em;
   }
 }
-// @media screen and (max-width: 320px) {
-//   header {
-//     margin-bottom: 3em;
-//   }
-//   .nav {
-//     li {
-//       padding-top: 0;
-//     }
-//   }
-//   .navbar-default .navbar-brand {
-//     font-size: 1.5em;
-//   }
-//   .navbar-collapse {
-//     margin-bottom: 3em;
-//   }
-// }
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: $screen-sm) {
   .container {
