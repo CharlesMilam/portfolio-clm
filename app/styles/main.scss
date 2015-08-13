@@ -34,8 +34,9 @@ $navbar-default-toggle-border-color: #727272;
   background-color: $navbar-default-bg;
   font-family: 'Alegreya Sans SC', sans-serif;
   li {
-    padding-top: 0.75em;
+
     a {
+      padding-top: 1.5em;
       color: $link-color;
       &:hover {
         color: darken($navbar-default-link-color, 10%);
@@ -80,7 +81,7 @@ header {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 40px;
-    padding-bottom: 19px;
+    // padding-bottom: 19px;
   }
 }
 
@@ -116,17 +117,40 @@ footer {
   }
 }
 .about-container {
-  padding-top: 3em;
+  margin-top: 3em;
+}
+.about-text {
+  // margin-right: 1em;
+  padding: 0;
+  margin-bottom: 2em;
+  img {
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.3);
+    margin: 1.5em;
+  }
+  .img-rounded {
+    border-radius: 50%;
+  }
+}
+.portfolio-container {
+  background-color: darken($body-bg, 7.5%);
+  margin: 0;
+  padding: 2em 0;
+  width: 100%;
+  .row {
+    margin: 0;
+  }
+}
+.proj-image {
+  padding: 0;
+}
+.proj-text {
+  // margin-right: 1em;
+  padding: 0 3em;
 }
 .proj-title {
   font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: 200;
   color: $title-color;
-}
-.portfolio-container {
-  background-color: darken($body-bg, 7.5%);
-  padding: 0;
-  width: 100%
 }
 .browsehappy {
   margin: 0.2em 0;
@@ -135,7 +159,7 @@ footer {
   padding: 0.2em 0;
 }
 
-@media (min-width: $screen-xs) {
+@media screen and (min-width: $screen-xs) {
   .container {
     padding: 0;
     width: 100%;
@@ -153,28 +177,13 @@ footer {
     }
   }
   .navbar-default .navbar-brand {
-    font-size: 1.5em;
+    // font-size: 1.5em;
   }
   .navbar-collapse {
     margin-bottom: 3em;
   }
 }
-// @media screen and (max-width: 320px) {
-//   header {
-//     margin-bottom: 3em;
-//   }
-//   .nav {
-//     li {
-//       padding-top: 0;
-//     }
-//   }
-//   .navbar-default .navbar-brand {
-//     font-size: 1.5em;
-//   }
-//   .navbar-collapse {
-//     margin-bottom: 3em;
-//   }
-// }
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: $screen-sm) {
   .container {
