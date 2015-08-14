@@ -58,7 +58,9 @@ $navbar-default-toggle-border-color: #727272;
 // end bootstrap overrides
 /* Space out content a bit */
 body {
+  font-family: $font-family-sans-serif;
   font-size: $font-size-base;
+  font-weight: 400;
   line-height: $line-height-computed;
   background-color: $body-bg;
   color: $text-color;
