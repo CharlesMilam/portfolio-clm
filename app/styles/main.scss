@@ -10,6 +10,8 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 // end fonts
 
 $title-color: #CDDC39;
+$panel-header-bg: #9E9E9E;
+$panel-body-bg: #B6B6B6;
 // bootstrap overrides
 $body-bg: $gray-dark;
 $brand-primary: #CDDC39;
@@ -160,10 +162,15 @@ footer {
   }
 }
 .social-panel {
+  border-color: $text-color;
   box-shadow: 0 3px 5px 0 rgba(0,0,0,0.3);
 }
-.social-heading {
+.panel-heading.social-heading {
+  background-color: $panel-header-bg;
   text-align: center;
+}
+.panel-body.social-body {
+  background-color: $panel-body-bg;
 }
 .browsehappy {
   margin: 0.2em 0;
