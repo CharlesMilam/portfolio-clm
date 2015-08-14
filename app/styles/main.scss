@@ -153,7 +153,11 @@ footer {
   color: $title-color;
 }
 .social-container {
-  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  .row {
+    margin: 0;
+  }
 }
 .browsehappy {
   margin: 0.2em 0;
