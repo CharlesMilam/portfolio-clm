@@ -159,7 +159,7 @@ footer {
   }
 }
 .proj-image {
-  padding: 0;
+  padding: 4em 3em;
 }
 .proj-text {
   // margin-right: 1em;
@@ -215,7 +215,7 @@ footer {
   padding: 0.2em 0;
 }
 
-@media screen and (min-width: $screen-xs) {
+@media screen and (max-width: $screen-xs) {
   .container {
     padding: 0;
     width: 100%;
@@ -249,6 +249,9 @@ footer {
   // }
   .navbar-collapse {
     margin-bottom: 3em;
+  }
+  .navbar-default .navbar-brand {
+    font-size: 1.5em
   }
 }
 
