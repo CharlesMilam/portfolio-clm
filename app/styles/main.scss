@@ -10,6 +10,9 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 // end fonts
 
 $title-color: #CDDC39;
+$panel-header-bg: #616161;
+$panel-body-bg: #727272;
+$panel-body-text: #212121;
 // bootstrap overrides
 $body-bg: $gray-dark;
 $brand-primary: #CDDC39;
@@ -56,7 +59,9 @@ $navbar-default-toggle-border-color: #727272;
 // end bootstrap overrides
 /* Space out content a bit */
 body {
+  font-family: $font-family-sans-serif;
   font-size: $font-size-base;
+  font-weight: 400;
   line-height: $line-height-computed;
   background-color: $body-bg;
   color: $text-color;
@@ -104,7 +109,7 @@ footer {
   border-color: transparent;
 }
 .navbar.navbar-default.navbar-fixed-top {
-  height: 3em;
+  height: 4em;
   margin-bottom: 0;
 }
 .navbar-default .navbar-brand {
@@ -151,6 +156,44 @@ footer {
   font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: 200;
   color: $title-color;
+}
+.social-container {
+  margin-top: 4em;
+  margin-bottom: 4em;
+  .row {
+    margin: 0;
+  }
+}
+.social-panel {
+  border-color: $text-color;
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,0.3);
+  min-height: 12em;
+}
+.panel {
+  background-color: $panel-body-bg;
+}
+.panel-heading.social-heading {
+  background-color: $panel-header-bg;
+  text-align: center;
+  a {
+    color: $link-color;
+    &:hover {
+      color: darken($link-color, 10%);
+    }
+    &:focus {
+      color: darken($link-color, 10%);
+    }
+    &:active {
+      color: darken($link-color, 10%);
+    }
+  }
+}
+.panel-body.social-body {
+  background-color: $panel-body-bg;
+  color: $panel-body-text;
+  a {
+    color: $link-color;
+  }
 }
 .browsehappy {
   margin: 0.2em 0;
