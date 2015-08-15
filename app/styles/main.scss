@@ -167,6 +167,10 @@ footer {
 .social-panel {
   border-color: $text-color;
   box-shadow: 0 3px 5px 0 rgba(0,0,0,0.3);
+  min-height: 12em;
+}
+.panel {
+  background-color: $panel-body-bg;
 }
 .panel-heading.social-heading {
   background-color: $panel-header-bg;
