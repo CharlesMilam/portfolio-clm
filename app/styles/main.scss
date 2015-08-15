@@ -122,6 +122,12 @@ footer {
   &:hover {
     color: darken($navbar-default-brand-color, 10%);
   }
+  &:focus {
+    color: darken($navbar-default-brand-color, 10%);
+  }
+  &:active {
+    color: darken($navbar-default-brand-color, 10%);
+  }
 }
 .about-container {
   margin-top: 3em;
