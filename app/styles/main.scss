@@ -10,8 +10,9 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 // end fonts
 
 $title-color: #CDDC39;
-$panel-header-bg: #9E9E9E;
-$panel-body-bg: #B6B6B6;
+$panel-header-bg: #616161;
+$panel-body-bg: #727272;
+$panel-body-text: #212121;
 // bootstrap overrides
 $body-bg: $gray-dark;
 $brand-primary: #CDDC39;
@@ -185,7 +186,7 @@ footer {
 }
 .panel-body.social-body {
   background-color: $panel-body-bg;
-  color: #616161;
+  color: $panel-body-text;
   a {
     color: $link-color;
   }
