@@ -220,9 +220,21 @@ footer {
       padding-top: 0;
     }
   }
-  .navbar-default .navbar-brand {
-    // font-size: 1.5em;
-  }
+  // .navbar-brand {
+  //     color: $link-color;
+  //     &:hover {
+  //       color: darken($navbar-default-link-color, 10%);
+  //       background-color: darken($body-bg, 6.5%);
+  //     }
+  //     &:focus {
+  //       color: darken($navbar-default-link-color, 10%);
+  //       background-color: darken($body-bg, 6.5%);
+  //     }
+  //     &:active {
+  //       color: darken($navbar-default-link-color, 10%);
+  //       background-color: darken($body-bg, 6.5%);
+  //     }
+  // }
   .navbar-collapse {
     margin-bottom: 3em;
   }
