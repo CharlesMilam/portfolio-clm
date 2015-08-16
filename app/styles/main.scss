@@ -8,7 +8,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 // fonts
 @import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,200,100|Alegreya+Sans:400,700);
 // end fonts
-
+$word-spacing: 0.17em;
 $title-color: #CDDC39;
 $panel-header-bg: #616161;
 $panel-body-bg: #727272;
@@ -62,6 +62,7 @@ body {
   font-family: $font-family-sans-serif;
   font-size: $font-size-base;
   font-weight: 400;
+  word-spacing: $word-spacing;
   line-height: $line-height-computed;
   background-color: $body-bg;
   color: $text-color;
@@ -98,6 +99,10 @@ footer {
   border-color: transparent;
   text-align: center;
 }
+.anchor-top {
+  position: relative;
+  top: 7em;
+}
 .container {
   padding: 0;
   width: 100%;
@@ -121,13 +126,20 @@ footer {
   &:hover {
     color: darken($navbar-default-brand-color, 10%);
   }
+  &:focus {
+    color: darken($navbar-default-brand-color, 10%);
+  }
+  &:active {
+    color: darken($navbar-default-brand-color, 10%);
+  }
 }
 .about-container {
   margin-top: 3em;
 }
 .about-text {
   // margin-right: 1em;
-  padding: 0;
+  padding: 0 3em 0 2em;
+  // padding-right: 1em;
   margin-bottom: 2em;
   img {
     box-shadow: 0 3px 5px 0 rgba(0,0,0,0.3);
@@ -147,7 +159,7 @@ footer {
   }
 }
 .proj-image {
-  padding: 0;
+  padding: 4em 3em;
 }
 .proj-text {
   // margin-right: 1em;
@@ -203,7 +215,7 @@ footer {
   padding: 0.2em 0;
 }
 
-@media screen and (min-width: $screen-xs) {
+@media screen and (max-width: $screen-xs) {
   .container {
     padding: 0;
     width: 100%;
@@ -220,11 +232,26 @@ footer {
       padding-top: 0;
     }
   }
-  .navbar-default .navbar-brand {
-    // font-size: 1.5em;
-  }
+  // .navbar-brand {
+  //     color: $link-color;
+  //     &:hover {
+  //       color: darken($navbar-default-link-color, 10%);
+  //       background-color: darken($body-bg, 6.5%);
+  //     }
+  //     &:focus {
+  //       color: darken($navbar-default-link-color, 10%);
+  //       background-color: darken($body-bg, 6.5%);
+  //     }
+  //     &:active {
+  //       color: darken($navbar-default-link-color, 10%);
+  //       background-color: darken($body-bg, 6.5%);
+  //     }
+  // }
   .navbar-collapse {
     margin-bottom: 3em;
+  }
+  .navbar-default .navbar-brand {
+    font-size: 1.5em
   }
 }
 
