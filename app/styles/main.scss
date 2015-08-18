@@ -159,7 +159,12 @@ footer {
   }
 }
 .proj-image {
-  padding: 4em 3em;
+  padding: 2em 3em;
+  img {
+    border-radius: 3px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+
 }
 .proj-text {
   // margin-right: 1em;
