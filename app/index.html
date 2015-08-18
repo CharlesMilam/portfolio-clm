@@ -82,7 +82,32 @@
                 Local Weather is a project for Free Code Camp. The project objective was to create a web app which will display current local weather conditions for the user's location. I extended the project objective by adding 6 day forecast data.
               </p>
               <p>
-                I made use of the openweathermap api for current conditions and forecast data. Location information is provided by the browser's geolocation ability. This provides the user's latitude and longitude. The user's lat/long is then fed to Google Map's geolocator api for a reverse lookup, turning the lat/long into a city name. 
+                I made use of the openweathermap api for current conditions and forecast data. Location information is provided by the browser's geolocation ability. This provides the user's latitude and longitude. The user's lat/long is then fed to Google Map's geolocator api for a reverse lookup, turning the lat/long into a city name. I found during my testing, using my current location's lat/long, that the openweathermap api was returning the county of residence instead of the city. I chose to do the reverse lookup, and then feed the city name to the openweathermap api.
+              </p>
+              <p>
+                I was going for a simple, material-like look and feel. The background color varies depending on the current temperature. I used Bootstrap for the CSS framework, and owfont for the weather icons.
+              </p>
+              <p>
+                <ul class="proj-links">
+                  <li>
+                    <i class="fa fa-github"></i>
+                    <a href="https://github.com/CharlesMilam/fcc/tree/master/local-weather" target="_blank">
+                      Github Repo
+                    </a>
+                  </li>
+                  <li>
+                    <i class="fa fa-codepen"></i>
+                    <a href="http://codepen.io/CharlesMilam/pen/VLRKdP" target="_blank">
+                      CodePen
+                    </a>
+                  </li>
+                  <li>
+                    <i class="fa fa-html5"></i>
+                    <a href="http://local-weather.divshot.io/">
+                      Website
+                    </a>
+                  </li>
+                </ul>
               </p>
             </div>
           </div>

@@ -6,7 +6,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 // fonts
-@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,200,100|Alegreya+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,200,300|Alegreya+Sans:400,700);
 // end fonts
 $word-spacing: 0.17em;
 $title-color: #CDDC39;
@@ -36,6 +36,7 @@ $navbar-default-toggle-border-color: #727272;
 .nav {
   background-color: $navbar-default-bg;
   font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 300;
   li {
 
     a {
@@ -164,7 +165,6 @@ footer {
     border-radius: 3px;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
   }
-
 }
 .proj-text {
   // margin-right: 1em;
@@ -174,6 +174,27 @@ footer {
   font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: 200;
   color: $title-color;
+}
+.proj-links {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  li {
+    color: $title-color;
+    display: inline;
+    list-style-type: none;
+    margin-right: 1em;
+  }
+  a {
+    color: $link-color;
+    &:hover {
+      color: darken($link-color, 10%);
+    }
+    &:focus {
+      color: darken($link-color, 10%);
+    }
+    &:active {
+      color: darken($link-color, 10%);
+    }
+  }
 }
 .social-container {
   margin-top: 4em;
