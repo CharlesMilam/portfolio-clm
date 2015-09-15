@@ -1,4 +1,5 @@
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+$fa-font-path: "/bower_components/font-awesome/fonts/";
 // custom variables to override bootstrap defaults
 //@import "_custom-variables.scss";
 // end custom variables
@@ -7,6 +8,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 // endbower
 // fonts
 @import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,200,300|Alegreya+Sans:400,700);
+@import "font-awesome/scss/font-awesome";
 // end fonts
 $word-spacing: 0.17em;
 $title-color: #CDDC39;
